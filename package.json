@@ -19,7 +19,6 @@
         "css-vars-ponyfill": "^2.1.2",
         "history": "^5.0.0",
         "lodash": "^4.17.19",
-        "node-sass": "^4.14.1",
         "nprogress": "^0.2.0",
         "prop-types": "^15.7.2",
         "react": "^16.13.1",
@@ -47,14 +46,17 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "@babel/plugin-syntax-class-properties": "^7.12.1",
-        "add": "^2.0.6",
-        "chart.js": "^2.9.3",
-        "formik": "^2.2.0",
-        "moment": "^2.29.1",
-        "react-chartjs-2": "^2.10.0",
-        "react-feather": "^2.0.8",
-        "react-helmet": "^6.1.0",
-        "yup": "^0.29.3"
+      "@babel/plugin-syntax-class-properties": "^7.12.1",
+      "add": "^2.0.6",
+      "chart.js": "^2.9.3",
+      "formik": "^2.2.0",
+      "jquery": "^3.5.1",
+      "materialize-css": "^1.0.0-rc.2",
+      "moment": "^2.29.1",
+      "node-sass": "^5.0.0",
+      "react-chartjs-2": "^2.10.0",
+      "react-feather": "^2.0.8",
+      "react-helmet": "^6.1.0",
+      "yup": "^0.29.3"
     }
 }
