@@ -1,0 +1,53 @@
+/* Roboto Thin */
+
+@font-face {
+    font-family: "Roboto";
+    src: local("/fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Roboto Thin Italic */
+
+@font-face {
+    font-family: "Roboto";
+    src: local("/fonts/Roboto-ThinItalic.ttf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Roboto regular */
+
+@font-face {
+    font-family: "Roboto";
+    src: local("/fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Roboto italic */
+
+@font-face {
+    font-family: "Roboto";
+    src: local('./fonts/Roboto-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Roboto meduim */
+
+@font-face {
+    font-family: "Roboto";
+    src: local('/fonts/Roboto-Meduim.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Roboto bold */
+
+@font-face {
+    font-family: "Roboto";
+    src: local('/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
