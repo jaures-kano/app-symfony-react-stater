@@ -13,23 +13,22 @@
 
 <div class="wrapper">
     {{ include('base/includes/side_bar/_side_bar.html.twig') }}
-
     <div class="content-wrapper">
         <section class="content">
             <div class="container-fluid">
-                <div class="col-sm-12">
-                    {{ include('base/includes/_nav_bloc.html.twig') }}
-                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        {{ include('base/includes/_nav_bloc.html.twig') }}
+                    </div>
 
-                <div class="col-sm-12 bg-primary min-vh-100 m-2">
                     {% block body %}
 
                     {% endblock %}
                 </div>
+
             </div>
         </section>
     </div>
-
 </div>
 {% include('base/includes/_footer.html.twig') %}
 {{ encore_entry_script_tags('base') }}
