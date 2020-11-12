@@ -9,28 +9,29 @@
     {% block stylesheets %}{% endblock %}
 </head>
 
-<body class="container-fluid bg-secondary">
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
 
-<div class="row">
-    <div class="col-xl-1 col-md-2 col-sm-2">
-        {{ include('base/includes/side_bar/_side_bar.html.twig') }}
+<div class="wrapper">
+    {{ include('base/includes/side_bar/_side_bar.html.twig') }}
+
+    <div class="content-wrapper">
+        <section class="content">
+            <div class="container-fluid">
+                <div class="col-sm-12">
+                    {{ include('base/includes/_nav_bloc.html.twig') }}
+                </div>
+
+                <div class="col-sm-12 bg-primary min-vh-100 m-2">
+                    {% block body %}
+
+                    {% endblock %}
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div class="col-xl-11 col-md-10 col-sm-12 bg-secondary">
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div id="bot"> You should check in on some of those fields below. You should check in on some of those fields
-            below.
-        </div>
-        {% block body %}
-
-        {% endblock %}
-    </div>
 </div>
+{% include('base/includes/_footer.html.twig') %}
 {{ encore_entry_script_tags('base') }}
 {% block javascripts %}{% endblock %}
 </body>
