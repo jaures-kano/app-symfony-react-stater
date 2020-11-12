@@ -1,2 +1,9 @@
-@import "~materialize-css/dist/css/materialize.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
 @import "fonts.css";
+
+* {
+  font-family: 'Roboto', cursive;
+  font-style: italic;
+  font-weight: 600;
+}

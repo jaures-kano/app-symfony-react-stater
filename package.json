@@ -47,11 +47,12 @@
     },
     "dependencies": {
       "@babel/plugin-syntax-class-properties": "^7.12.1",
+      "@fortawesome/fontawesome-free": "^5.15.1",
       "add": "^2.0.6",
+      "bootstrap": "^4.5.3",
       "chart.js": "^2.9.3",
       "formik": "^2.2.0",
       "jquery": "^3.5.1",
-      "materialize-css": "^1.0.0-rc.2",
       "moment": "^2.29.1",
       "node-sass": "4.14.1",
       "react-chartjs-2": "^2.10.0",

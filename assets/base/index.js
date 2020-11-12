@@ -1,7 +1,8 @@
-import "materialize-css/dist/js/materialize.js"
-//  --------------------- importation du css de base de l'application
+import 'jquery'
 import './css/base.scss'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
+import '@fortawesome/fontawesome-free/js/all.min'
 
 (function (window, $) {
-    console.log($("#test").sideNav());
+
 })(window, jQuery);
