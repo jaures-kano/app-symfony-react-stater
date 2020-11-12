@@ -25,12 +25,12 @@ trait BaseTimeTrait
      */
     private $updatedAt;
 
-    public function getCreatedAt (): ?DateTimeInterface
+    public function getCreatedAt(): ?DateTimeInterface
     {
         return $this->createdAt;
     }
 
-    public function setCreatedAtAt (DateTimeInterface $createdAt): self
+    public function setCreatedAtAt(DateTimeInterface $createdAt): self
     {
         $this->createdAt = $createdAt;
 
@@ -42,7 +42,7 @@ trait BaseTimeTrait
         return $this->updatedAt;
     }
 
-    public function setUpdatedAt( DateTimeInterface $updatedAt): self
+    public function setUpdatedAt(DateTimeInterface $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
 
