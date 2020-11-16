@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) =>
         },
         speedDial: {
             position: 'absolute',
-            bottom: theme.spacing(-6),
+            bottom: theme.spacing(-5),
             right: theme.spacing(2),
         },
     }),
@@ -27,6 +27,10 @@ const useStyles = makeStyles((theme) =>
 const actions = [
     {icon: <FileCopyIcon/>, name: 'Copy'},
     {icon: <SaveIcon/>, name: 'Save'},
+    {icon: <PrintIcon/>, name: 'Print'},
+    {icon: <PrintIcon/>, name: 'Print'},
+    {icon: <PrintIcon/>, name: 'Print'},
+    {icon: <PrintIcon/>, name: 'Print'},
     {icon: <PrintIcon/>, name: 'Print'},
     {icon: <ShareIcon/>, name: 'Share'},
     {icon: <FavoriteIcon/>, name: 'Like'},
@@ -45,23 +49,23 @@ export default function SpeedDialTooltipOpen() {
     };
 
     return (
-
         <SpeedDial
             ariaLabel="SpeedDial tooltip example"
             className={classes.speedDial}
-            hidden={hidden}
+            hidden={false}
             icon={<SpeedDialIcon/>}
             onClose={handleClose}
             onOpen={handleOpen}
             open={open}
         >
-            {actions.map((action) => (
+            {actions.map((action, index) => (
                 <SpeedDialAction
-                    key={action.name}
+                    key={index}
                     icon={action.icon}
                     tooltipTitle={action.name}
                     tooltipOpen
-                    onClick={handleClose}/>
+                    onClick={handleClose}
+                />
             ))}
         </SpeedDial>
     );

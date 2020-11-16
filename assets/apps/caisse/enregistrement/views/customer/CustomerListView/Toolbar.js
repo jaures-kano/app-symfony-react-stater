@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import {Box, Button, Card, CardContent, InputAdornment, makeStyles, SvgIcon, TextField} from '@material-ui/core';
-import {Search as SearchIcon} from 'react-feather';
+import {Box, Card, CardContent, makeStyles} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -22,44 +21,11 @@ const Toolbar = ({className, ...rest}) => {
           className={clsx(classes.root, className)}
           {...rest}
       >
-        <Box
-            display="flex"
-            justifyContent="flex-end"
-        >
-          <Button className={classes.importButton}>
-            Import
-          </Button>
-          <Button className={classes.exportButton}>
-            Export
-          </Button>
-          <Button
-              color="primary"
-              variant="contained"
-          >
-            Add customer
-          </Button>
-        </Box>
-        <Box mt={3}>
+        <Box>
           <Card>
             <CardContent>
-              <Box maxWidth={500}>
-                <TextField
-                    fullWidth
-                    InputProps={{
-                      startAdornment: (
-                          <InputAdornment position="start">
-                            <SvgIcon
-                                fontSize="small"
-                                color="action"
-                            >
-                              <SearchIcon/>
-                            </SvgIcon>
-                          </InputAdornment>
-                      )
-                    }}
-                    placeholder="Search customer"
-                    variant="outlined"
-                />
+              <Box>
+
               </Box>
             </CardContent>
           </Card>
