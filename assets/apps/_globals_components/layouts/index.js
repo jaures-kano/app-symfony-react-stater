@@ -1,6 +1,7 @@
 import React from 'react';
 import {Outlet} from 'react-router-dom';
 import {makeStyles} from '@material-ui/core';
+import SpeedDialTooltipOpen from "../SpeedDialTooltipOpen";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,9 +36,8 @@ export default function MainLayout() {
         <div className={classes.wrapper}>
           <div className={classes.contentContainer}>
             <div className={classes.content}>
-
               <Outlet/>
-
+              <SpeedDialTooltipOpen/>
             </div>
           </div>
         </div>

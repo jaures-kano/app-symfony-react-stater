@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navigate} from 'react-router-dom';
 import MainLayout from '../../_globals_components/layouts/index';
-import NotFoundView from './views/errors/NotFoundView';
+import NotFoundView from '../../_globals_components/layouts/errors/NotFoundView';
 import CustomerListView from "./views/customer/CustomerListView";
 
 const routes = [
